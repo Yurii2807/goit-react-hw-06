@@ -1,5 +1,5 @@
-import { FaUser } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
+import { FaPhoneVolume } from "react-icons/fa6";
 import css from "./Contact.module.css";
 
 import { deleteContact } from "../../redux/contactsSlice";
@@ -10,12 +10,12 @@ const Contact = ({ contact }) => {
   return (
     <div className={css.div}>
       <p className={css.p}>
-        <FaUser />
+        <FaUserAlt />
 
         {contact.name}
       </p>
       <p className={css.p}>
-        <FaPhoneAlt />
+        <FaPhoneVolume />
         {contact.number}
       </p>
       <button
